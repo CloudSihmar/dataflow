@@ -23,7 +23,7 @@ This repository demonstrates how to transform data from a CSV file in Google Clo
 1. Open Google Cloud Shell.
 2. Upload your Python pipeline file (e.g., `csv_to_bigquery.py`) to Cloud Shell.
 
-### 3. Set Up Python Virtual Environment
+### 3. Set Up Python Virtual Environment, install apache beam and start a pipeline
 
 Install the `virtualenv` module, create a virtual environment, and then activate it:
 
@@ -33,10 +33,10 @@ python3 -m virtualenv env
 source env/bin/activate
 '''
 
-4. Install Apache Bean
+# Install Apache Beam
 pip3 install apache-beam[gcp]
 
-5. Run the pipeline
+# Run the pipeline
 python3 csv_to_bigquery.py \
 --input gs://sandeep-apache/data-flow-demo.csv \
 --output  gs://sandeep-apache/out.txt \
