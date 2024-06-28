@@ -54,3 +54,11 @@ pip3 install virtualenv
 python3 -m virtualenv env
 source env/bin/activate
 
+### 4. Install Apache Beam
+
+Install Apache Beam with Google Cloud Platform support:
+
+```sh
+pip3 install apache-beam[gcp]
+
+
