@@ -31,7 +31,7 @@ Install the `virtualenv` module, create a virtual environment, and then activate
 pip3 install virtualenv
 python3 -m virtualenv env
 source env/bin/activate
-'''
+
 
 # Install Apache Beam
 pip3 install apache-beam[gcp]
