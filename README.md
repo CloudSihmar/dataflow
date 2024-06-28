@@ -1,11 +1,13 @@
-"1. Create a bucket and upload the csv file"
-"2. open cloudshell and upload the python pipeline file"
-3. Install the virtualenv module, create a virtual environment, and then activate it:
+1. Create a bucket and upload the csv file
 
+2. open cloudshell and upload the python pipeline file
+
+3. Install the virtualenv module, create a virtual environment, and then activate it:
+'''
 pip3 install virtualenv
 python3 -m virtualenv env
 source env/bin/activate
-
+'''
 4. Install Apache Bean
 pip3 install apache-beam[gcp]
 
