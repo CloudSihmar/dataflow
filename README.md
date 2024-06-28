@@ -1,5 +1,5 @@
-1. Create a bucket and upload the csv file
-2. open cloudshell and upload the python pipeline file
+"1. Create a bucket and upload the csv file"
+"2. open cloudshell and upload the python pipeline file"
 3. Install the virtualenv module, create a virtual environment, and then activate it:
 
 pip3 install virtualenv
