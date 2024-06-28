@@ -1,27 +1,3 @@
-1. Create a bucket and upload the csv file
-
-2. open cloudshell and upload the python pipeline file
-
-3. Install the virtualenv module, create a virtual environment, and then activate it:
-'''
-pip3 install virtualenv
-python3 -m virtualenv env
-source env/bin/activate
-'''
-4. Install Apache Bean
-pip3 install apache-beam[gcp]
-
-5. Run the pipeline
-python3 csv_to_bigquery.py \
---input gs://sandeep-apache/data-flow-demo.csv \
---output  gs://sandeep-apache/out.txt \
---project techlanders-internal \
---region us-central1 \
---staging_location gs://sandeep-apache/staging \
---temp_location gs://sandeep-apache/temp \
---runner DataFlowRunner
-
-
 # Data Transformation with Google Cloud Dataflow and BigQuery
 
 This repository demonstrates how to transform data from a CSV file in Google Cloud Storage using Google Cloud Dataflow and store it in BigQuery.
@@ -40,6 +16,8 @@ This repository demonstrates how to transform data from a CSV file in Google Clo
 1. Create a new bucket in Google Cloud Storage.
 2. Upload your CSV file to the created bucket.
 
+
+
 ### 2. Open Cloud Shell and Upload the Python Pipeline File
 
 1. Open Google Cloud Shell.
@@ -53,12 +31,25 @@ Install the `virtualenv` module, create a virtual environment, and then activate
 pip3 install virtualenv
 python3 -m virtualenv env
 source env/bin/activate
+'''
 
-### 4. Install Apache Beam
-
-Install Apache Beam with Google Cloud Platform support:
-
-```sh
+4. Install Apache Bean
 pip3 install apache-beam[gcp]
+
+5. Run the pipeline
+python3 csv_to_bigquery.py \
+--input gs://sandeep-apache/data-flow-demo.csv \
+--output  gs://sandeep-apache/out.txt \
+--project techlanders-internal \
+--region us-central1 \
+--staging_location gs://sandeep-apache/staging \
+--temp_location gs://sandeep-apache/temp \
+--runner DataFlowRunner
+
+
+
+
+
+
 
 
